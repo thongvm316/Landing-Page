@@ -47,7 +47,7 @@ section#header {
     position: fixed;
     z-index: 1000;
     top: 0; left: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
     // background-color: rgb(41, 50, 60);
     background-color: rgba(31, 30, 30, 0.24);
@@ -132,6 +132,53 @@ section#hero {
         }
     }
 }
+
+/* Media Query */
+@media(max-width: 768px){
+    *{}
+    section#header {
+        .container {
+            .nav-bar {
+                // width: 100%;
+                // height: 100vh;
+                .branch {
+                    position: absolute;
+                    top: 2rem; left: 2rem;
+                }
+                .nav-list {
+                    .bar { 
+                        display: block;
+                        position: absolute;
+                        right: 2rem; top: 2rem;
+                        i {
+                            color: #fff;
+                            font-size: 2.4rem;
+                        } 
+                    }    
+                    ul {
+                        // width: 100vw;
+                        // height: 100vh;
+                        // background-color: rgb(31, 30, 30);
+                        flex-direction: column;
+                        position: absolute;
+                        top: 50%; right: 50%;
+                        transform: translate(50%, -50%);
+                        text-align: center;
+                        li {
+                            a{ 
+                                letter-spacing: .2rem;
+                                font-weight: 500;
+                                font-size: 2.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 /* todo:
 1. Responsive Header - Hero

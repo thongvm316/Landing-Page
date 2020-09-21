@@ -40,7 +40,7 @@ section#header {
   z-index: 1000;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: auto;
   background-color: rgba(31, 30, 30, 0.24);
 }
@@ -122,6 +122,37 @@ section#hero .container div a:hover {
   background-color: crimson;
 }
 
+/* Media Query */
+@media (max-width: 768px) {
+  section#header .container .nav-bar .branch {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+  section#header .container .nav-bar .nav-list .bar {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+  }
+  section#header .container .nav-bar .nav-list .bar i {
+    color: #fff;
+    font-size: 2.4rem;
+  }
+  section#header .container .nav-bar .nav-list ul {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+  }
+  section#header .container .nav-bar .nav-list ul li a {
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+}
 /* todo:
 1. Responsive Header - Hero
 2. Js for button bar
