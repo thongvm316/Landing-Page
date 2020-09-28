@@ -215,6 +215,9 @@ section#project {
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 50px;
+        span {
+          color: crimson;
+        }
       }
     }
     .project-all {
@@ -224,19 +227,52 @@ section#project {
         justify-content: center;
         width: 100%;
         height: 400px;
+        > div {
+          flex-basis: 50%;
+        }
         .project-info {
-            flex-basis: 50%;
-            height: 100%;
+          background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 30px;
+          color: #fff;
+          h1 {
+            font-size: 4rem;
+            font-weight: 500;
+          }
+          h2 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-top: 10px; 
+          }
+          p {
+            color: #fff;
+          }
         }
         .project-image {
-            flex-basis: 50%;
+          height: 100%;
+          position: relative;
+          &:after {
+            position: absolute;
+            content: '';
+            top: 0; left: 0;
+            width: 100%;
             height: 100%;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+            background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+            opacity: .7;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
+      }
+      .project-item:nth-child(even) {
+        .project-image { order: 0; }
+        .project-info { order: 1; }
       }
     }
   }
@@ -306,4 +342,3 @@ section#project {
     }
   }
 }
-
