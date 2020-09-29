@@ -22,6 +22,12 @@ body {
   padding: 0 2.4rem;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 p {
   color: black;
   font-size: 1.4rem;
@@ -244,16 +250,78 @@ section#project .container .project-all .project-item .project-image:after {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   opacity: 0.7;
 }
-section#project .container .project-all .project-item .project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 section#project .container .project-all .project-item:nth-child(even) .project-image {
   order: 0;
 }
 section#project .container .project-all .project-item:nth-child(even) .project-info {
   order: 1;
+}
+
+/* About me */
+section#about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section#about .container .col-left {
+  flex-basis: 600px;
+  height: 400px;
+}
+section#about .container .col-left .about-image {
+  width: 100%;
+  height: 100%;
+  border: 10px solid #fff;
+  position: relative;
+}
+section#about .container .col-left .about-image:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 30px;
+  left: -44px;
+  border: 10px solid crimson;
+  z-index: -1;
+}
+section#about .container .col-right {
+  padding: 30px;
+  width: 100%;
+  text-align: left;
+}
+section#about .container .col-right .section-title {
+  font-size: 6rem;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+  text-align: left;
+}
+section#about .container .col-right .section-title span {
+  color: crimson;
+}
+section#about .container .col-right h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+}
+section#about .container .col-right a {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 10px 20px;
+  color: black;
+  background-color: transparent;
+  border: 2px solid crimson;
+  transition: 0.4s background-color;
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+section#about .container .col-right a:hover {
+  background-color: crimson;
+  color: #fff;
 }
 
 /* Media Query */
