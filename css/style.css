@@ -296,7 +296,6 @@ section#about .container .col-right .section-title {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   margin-bottom: 25px;
-  text-align: center;
   text-align: left;
 }
 section#about .container .col-right .section-title span {
@@ -322,6 +321,59 @@ section#about .container .col-right a {
 section#about .container .col-right a:hover {
   background-color: crimson;
   color: #fff;
+}
+
+/* Contact */
+section#contact .container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+section#contact .container div .section-title {
+  font-size: 6rem;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+}
+section#contact .container div .section-title span {
+  color: crimson;
+}
+section#contact .container .contact-items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+section#contact .container .contact-items .contact-item {
+  display: flex;
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0px 0px 18px 0 #0000002c;
+}
+section#contact .container .contact-items .contact-item:hover {
+  box-shadow: 0px 0px 5px 0 #0000002c;
+}
+section#contact .container .contact-items .contact-item .icon img {
+  width: 80%;
+  height: 80%;
+}
+section#contact .container .contact-items .contact-item .contact-info {
+  margin-left: 10px;
+}
+section#contact .container .contact-items .contact-item .contact-info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+section#contact .container .contact-items .contact-item .contact-info h2 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 /* Media Query */
