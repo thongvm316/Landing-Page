@@ -456,8 +456,6 @@ section#footer {
 
 /* Media Query */
 @media (max-width: 768px) {
-  * {
-  }
   section#header {
     .container {
       min-height: 7rem;
@@ -471,8 +469,8 @@ section#footer {
           .bar {
             display: block;
             position: absolute;
-            right: 2rem;
-            top: 2rem;
+            right: 3rem;
+            top: 1.5rem;
             z-index: 999;
             i {
               color: #fff;
@@ -509,7 +507,7 @@ section#footer {
     .container {
       div {
         h1 {
-          font-size: 4rem;
+          font-size: 6rem;
         }
         a {
           font-size: 2rem;
@@ -517,4 +515,48 @@ section#footer {
       }
     }
   }
+
+  section#services {
+    .container {
+      .services-bottom {
+        flex-wrap: wrap;
+        > div {
+          flex-basis: 45%;
+        }
+        .service-item {
+          .icon {
+            width: 70px; height: 70px;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  section#about {
+    .container {
+      .col-left {
+        padding-left: 2rem;
+        .about-image {
+          width: 90%;
+          height: 90%;
+        }
+      }
+    }
+  }
+
+  section#contact {
+    .container {
+      .contact-items {
+        .contact-item {
+          align-items: center;
+          .icon {
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+    }
+  }
 }
+
