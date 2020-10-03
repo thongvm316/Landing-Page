@@ -525,7 +525,8 @@ section#footer {
         }
         .service-item {
           .icon {
-            width: 70px; height: 70px;
+            width: 70px;
+            height: 70px;
             margin-bottom: 2rem;
           }
         }
@@ -560,3 +561,104 @@ section#footer {
   }
 }
 
+@media (max-width: 425px) {
+  section#header {
+    .container {
+      .nav-bar {
+        .nav-list {
+          .bar {
+            right: 2rem;
+            top: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  section#services {
+    .container {
+      .services-top {
+        width: 300px;
+      }
+      .services-bottom {
+        flex-direction: column;
+      }
+    }
+  }
+
+  section#project {
+    .container {
+      .project-all {
+        .project-item {
+          flex-direction: column;
+          width: 80%;
+          margin: 20px auto;
+          height: auto;
+          border-radius: 10px;
+          overflow: hidden;
+          .project-image,
+          .project-info {
+            flex-basis: 50%;
+          }
+        }
+        .project-item:nth-child(even) {
+          .project-image {
+            order: 1;
+          }
+          .project-info {
+            order: 0;
+          }
+        }
+      }
+    }
+  }
+
+  section#about {
+    .container {
+      flex-direction: column;
+      .col-right {
+        order: 0;
+        text-align: center;
+        h1 {
+          text-align: center !important;
+          font-size: 4rem !important;
+        }
+      }
+      .col-left {
+        order: 1;
+        .about-image {
+          width: 70%;
+          margin: auto;
+          &:after {
+            border: 5px solid crimson;
+          }
+        }
+      }
+    }
+  }
+
+  section#contact {
+    margin-top: 10rem;
+    .container {
+      div {
+        .section-title {
+          font-size: 4rem;
+        }
+      }
+      .contact-items {
+        flex-direction: column;
+        .contact-item {
+          width: 80%;
+          height: 200px;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0 auto 2rem auto;
+          .icon {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
