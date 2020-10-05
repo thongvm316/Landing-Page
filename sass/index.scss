@@ -662,3 +662,39 @@ section#footer {
     }
   }
 }
+
+@media (max-width: 320px) {
+  section#services {
+    .container {
+      .services-top {
+        width: 270px;
+        h1 {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+
+  section#about {
+    margin-top: 10rem;
+  }
+
+  section#contact,
+  section#footer {
+    margin-top: 40rem;
+  }
+
+  section#footer {
+    .container {
+      .social-icon {
+        margin-bottom: 1.5rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

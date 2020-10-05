@@ -573,5 +573,32 @@ section#project .container .project-all .project-item .project-info {
     height: 100px;
   }
 }
+@media (max-width: 320px) {
+  section#services .container .services-top {
+    width: 270px;
+  }
+  section#services .container .services-top h1 {
+    font-size: 5rem;
+  }
+
+  section#about {
+    margin-top: 10rem;
+  }
+
+  section#contact,
+section#footer {
+    margin-top: 40rem;
+  }
+
+  section#footer .container .social-icon {
+    margin-bottom: 1.5rem;
+  }
+  section#footer .container h2 {
+    font-size: 1.5rem;
+  }
+  section#footer .container p {
+    font-size: 1rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
